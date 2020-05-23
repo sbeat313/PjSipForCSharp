@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8C260B4-9B90-4011-9246-12ADFEB4AD80}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SwigPjSip</RootNamespace>
+    <AssemblyName>SwigPjSip</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="swig\Account.cs" />
+    <Compile Include="swig\AccountCallConfig.cs" />
+    <Compile Include="swig\AccountConfig.cs" />
+    <Compile Include="swig\AccountInfo.cs" />
+    <Compile Include="swig\AccountIpChangeConfig.cs" />
+    <Compile Include="swig\AccountMediaConfig.cs" />
+    <Compile Include="swig\AccountMwiConfig.cs" />
+    <Compile Include="swig\AccountNatConfig.cs" />
+    <Compile Include="swig\AccountPresConfig.cs" />
+    <Compile Include="swig\AccountRegConfig.cs" />
+    <Compile Include="swig\AccountSipConfig.cs" />
+    <Compile Include="swig\AccountVideoConfig.cs" />
+    <Compile Include="swig\AudDevErrorEvent.cs" />
+    <Compile Include="swig\AudDevManager.cs" />
+    <Compile Include="swig\AudioDevInfo.cs" />
+    <Compile Include="swig\AudioDevInfoVector.cs" />
+    <Compile Include="swig\AudioDevInfoVector2.cs" />
+    <Compile Include="swig\AudioMedia.cs" />
+    <Compile Include="swig\AudioMediaPlayer.cs" />
+    <Compile Include="swig\AudioMediaPlayerInfo.cs" />
+    <Compile Include="swig\AudioMediaRecorder.cs" />
+    <Compile Include="swig\AudioMediaTransmitParam.cs" />
+    <Compile Include="swig\AudioMediaVector.cs" />
+    <Compile Include="swig\AudioMediaVector2.cs" />
+    <Compile Include="swig\AuthCredInfo.cs" />
+    <Compile Include="swig\AuthCredInfoVector.cs" />
+    <Compile Include="swig\Buddy.cs" />
+    <Compile Include="swig\BuddyConfig.cs" />
+    <Compile Include="swig\BuddyInfo.cs" />
+    <Compile Include="swig\BuddyVector.cs" />
+    <Compile Include="swig\BuddyVector2.cs" />
+    <Compile Include="swig\Call.cs" />
+    <Compile Include="swig\CallInfo.cs" />
+    <Compile Include="swig\CallMediaInfo.cs" />
+    <Compile Include="swig\CallMediaInfoVector.cs" />
+    <Compile Include="swig\CallOpParam.cs" />
+    <Compile Include="swig\CallSendDtmfParam.cs" />
+    <Compile Include="swig\CallSendRequestParam.cs" />
+    <Compile Include="swig\CallSetting.cs" />
+    <Compile Include="swig\CallVidSetStreamParam.cs" />
+    <Compile Include="swig\CodecFmtp.cs" />
+    <Compile Include="swig\CodecFmtpVector.cs" />
+    <Compile Include="swig\CodecInfo.cs" />
+    <Compile Include="swig\CodecInfoVector.cs" />
+    <Compile Include="swig\CodecInfoVector2.cs" />
+    <Compile Include="swig\CodecOpusConfig.cs" />
+    <Compile Include="swig\CodecParam.cs" />
+    <Compile Include="swig\CodecParamInfo.cs" />
+    <Compile Include="swig\CodecParamSetting.cs" />
+    <Compile Include="swig\ConfPortInfo.cs" />
+    <Compile Include="swig\ContainerNode.cs" />
+    <Compile Include="swig\Endpoint.cs" />
+    <Compile Include="swig\EpConfig.cs" />
+    <Compile Include="swig\Error.cs" />
+    <Compile Include="swig\ExtraAudioDevice.cs" />
+    <Compile Include="swig\FindBuddyMatch.cs" />
+    <Compile Include="swig\IntVector.cs" />
+    <Compile Include="swig\IpChangeParam.cs" />
+    <Compile Include="swig\JbufState.cs" />
+    <Compile Include="swig\JsonDocument.cs" />
+    <Compile Include="swig\LogConfig.cs" />
+    <Compile Include="swig\LogEntry.cs" />
+    <Compile Include="swig\LogWriter.cs" />
+    <Compile Include="swig\LossType.cs" />
+    <Compile Include="swig\MathStat.cs" />
+    <Compile Include="swig\Media.cs" />
+    <Compile Include="swig\MediaConfig.cs" />
+    <Compile Include="swig\MediaCoordinate.cs" />
+    <Compile Include="swig\MediaEvent.cs" />
+    <Compile Include="swig\MediaEventData.cs" />
+    <Compile Include="swig\MediaFmtChangedEvent.cs" />
+    <Compile Include="swig\MediaFormat.cs" />
+    <Compile Include="swig\MediaFormatAudio.cs" />
+    <Compile Include="swig\MediaFormatAudioVector.cs" />
+    <Compile Include="swig\MediaFormatVideo.cs" />
+    <Compile Include="swig\MediaFormatVideoVector.cs" />
+    <Compile Include="swig\MediaSize.cs" />
+    <Compile Include="swig\MediaTransportInfo.cs" />
+    <Compile Include="swig\OnBuddyEvSubStateParam.cs" />
+    <Compile Include="swig\OnCallMediaEventParam.cs" />
+    <Compile Include="swig\OnCallMediaStateParam.cs" />
+    <Compile Include="swig\OnCallMediaTransportStateParam.cs" />
+    <Compile Include="swig\OnCallRedirectedParam.cs" />
+    <Compile Include="swig\OnCallReplacedParam.cs" />
+    <Compile Include="swig\OnCallReplaceRequestParam.cs" />
+    <Compile Include="swig\OnCallRxOfferParam.cs" />
+    <Compile Include="swig\OnCallRxReinviteParam.cs" />
+    <Compile Include="swig\OnCallSdpCreatedParam.cs" />
+    <Compile Include="swig\OnCallStateParam.cs" />
+    <Compile Include="swig\OnCallTransferRequestParam.cs" />
+    <Compile Include="swig\OnCallTransferStatusParam.cs" />
+    <Compile Include="swig\OnCallTsxStateParam.cs" />
+    <Compile Include="swig\OnCallTxOfferParam.cs" />
+    <Compile Include="swig\OnCreateMediaTransportParam.cs" />
+    <Compile Include="swig\OnCreateMediaTransportSrtpParam.cs" />
+    <Compile Include="swig\OnDtmfDigitParam.cs" />
+    <Compile Include="swig\OnIncomingCallParam.cs" />
+    <Compile Include="swig\OnIncomingSubscribeParam.cs" />
+    <Compile Include="swig\OnInstantMessageParam.cs" />
+    <Compile Include="swig\OnInstantMessageStatusParam.cs" />
+    <Compile Include="swig\OnIpChangeProgressParam.cs" />
+    <Compile Include="swig\OnMediaEventParam.cs" />
+    <Compile Include="swig\OnMwiInfoParam.cs" />
+    <Compile Include="swig\OnNatCheckStunServersCompleteParam.cs" />
+    <Compile Include="swig\OnNatDetectionCompleteParam.cs" />
+    <Compile Include="swig\OnRegStartedParam.cs" />
+    <Compile Include="swig\OnRegStateParam.cs" />
+    <Compile Include="swig\OnSelectAccountParam.cs" />
+    <Compile Include="swig\OnStreamCreatedParam.cs" />
+    <Compile Include="swig\OnStreamDestroyedParam.cs" />
+    <Compile Include="swig\OnTimerParam.cs" />
+    <Compile Include="swig\OnTransportStateParam.cs" />
+    <Compile Include="swig\OnTypingIndicationParam.cs" />
+    <Compile Include="swig\PendingJob.cs" />
+    <Compile Include="swig\PersistentDocument.cs" />
+    <Compile Include="swig\PersistentObject.cs" />
+    <Compile Include="swig\pjmedia_aud_dev_cap.cs" />
+    <Compile Include="swig\pjmedia_aud_dev_route.cs" />
+    <Compile Include="swig\pjmedia_dir.cs" />
+    <Compile Include="swig\pjmedia_echo_flag.cs" />
+    <Compile Include="swig\pjmedia_event_type.cs" />
+    <Compile Include="swig\pjmedia_file_player_option.cs" />
+    <Compile Include="swig\pjmedia_file_writer_option.cs" />
+    <Compile Include="swig\pjmedia_format_id.cs" />
+    <Compile Include="swig\pjmedia_orient.cs" />
+    <Compile Include="swig\pjmedia_rtcp_fb_type.cs" />
+    <Compile Include="swig\pjmedia_srtp_crypto_option.cs" />
+    <Compile Include="swig\pjmedia_srtp_keying_method.cs" />
+    <Compile Include="swig\pjmedia_srtp_use.cs" />
+    <Compile Include="swig\pjmedia_tone_desc.cs" />
+    <Compile Include="swig\pjmedia_tone_digit.cs" />
+    <Compile Include="swig\pjmedia_tone_digit_map.cs" />
+    <Compile Include="swig\pjmedia_tp_proto.cs" />
+    <Compile Include="swig\pjmedia_type.cs" />
+    <Compile Include="swig\pjmedia_vid_dev_cap.cs" />
+    <Compile Include="swig\pjmedia_vid_dev_std_index.cs" />
+    <Compile Include="swig\pjmedia_vid_packing.cs" />
+    <Compile Include="swig\pjmedia_vid_stream_rc_method.cs" />
+    <Compile Include="swig\pjrpid_activity.cs" />
+    <Compile Include="swig\pjsip_cred_data_type.cs" />
+    <Compile Include="swig\pjsip_dialog_cap_status.cs" />
+    <Compile Include="swig\pjsip_event_id_e.cs" />
+    <Compile Include="swig\pjsip_evsub_state.cs" />
+    <Compile Include="swig\pjsip_hdr_e.cs" />
+    <Compile Include="swig\pjsip_inv_state.cs" />
+    <Compile Include="swig\pjsip_redirect_op.cs" />
+    <Compile Include="swig\pjsip_role_e.cs" />
+    <Compile Include="swig\pjsip_ssl_method.cs" />
+    <Compile Include="swig\pjsip_status_code.cs" />
+    <Compile Include="swig\pjsip_transport_flags_e.cs" />
+    <Compile Include="swig\pjsip_transport_state.cs" />
+    <Compile Include="swig\pjsip_transport_type_e.cs" />
+    <Compile Include="swig\pjsip_tsx_state_e.cs" />
+    <Compile Include="swig\pjsua2.cs" />
+    <Compile Include="swig\pjsua2PINVOKE.cs" />
+    <Compile Include="swig\pjsua_100rel_use.cs" />
+    <Compile Include="swig\pjsua_buddy_status.cs" />
+    <Compile Include="swig\pjsua_call_flag.cs" />
+    <Compile Include="swig\pjsua_call_hold_type.cs" />
+    <Compile Include="swig\pjsua_call_media_status.cs" />
+    <Compile Include="swig\pjsua_call_vid_strm_op.cs" />
+    <Compile Include="swig\pjsua_create_media_transport_flag.cs" />
+    <Compile Include="swig\pjsua_destroy_flag.cs" />
+    <Compile Include="swig\pjsua_dtmf_method.cs" />
+    <Compile Include="swig\pjsua_invalid_id_const_.cs" />
+    <Compile Include="swig\pjsua_ipv6_use.cs" />
+    <Compile Include="swig\pjsua_ip_change_op.cs" />
+    <Compile Include="swig\pjsua_med_tp_st.cs" />
+    <Compile Include="swig\pjsua_nat64_opt.cs" />
+    <Compile Include="swig\pjsua_sip_timer_use.cs" />
+    <Compile Include="swig\pjsua_snd_dev_id.cs" />
+    <Compile Include="swig\pjsua_snd_dev_mode.cs" />
+    <Compile Include="swig\pjsua_state.cs" />
+    <Compile Include="swig\pjsua_stun_use.cs" />
+    <Compile Include="swig\pjsua_vid_req_keyframe_method.cs" />
+    <Compile Include="swig\pj_constants_.cs" />
+    <Compile Include="swig\pj_file_access.cs" />
+    <Compile Include="swig\pj_log_decoration.cs" />
+    <Compile Include="swig\pj_qos_flag.cs" />
+    <Compile Include="swig\pj_qos_params.cs" />
+    <Compile Include="swig\pj_qos_type.cs" />
+    <Compile Include="swig\pj_qos_wmm_prio.cs" />
+    <Compile Include="swig\pj_ssl_cert_name_type.cs" />
+    <Compile Include="swig\pj_ssl_cert_verify_flag_t.cs" />
+    <Compile Include="swig\pj_ssl_cipher.cs" />
+    <Compile Include="swig\pj_ssl_sock_proto.cs" />
+    <Compile Include="swig\pj_stun_nat_type.cs" />
+    <Compile Include="swig\pj_turn_tp_type.cs" />
+    <Compile Include="swig\PresenceStatus.cs" />
+    <Compile Include="swig\PresNotifyParam.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="swig\RegProgressParam.cs" />
+    <Compile Include="swig\RtcpFbCap.cs" />
+    <Compile Include="swig\RtcpFbCapVector.cs" />
+    <Compile Include="swig\RtcpFbConfig.cs" />
+    <Compile Include="swig\RtcpSdes.cs" />
+    <Compile Include="swig\RtcpStat.cs" />
+    <Compile Include="swig\RtcpStreamStat.cs" />
+    <Compile Include="swig\RxMsgEvent.cs" />
+    <Compile Include="swig\sample.cs" />
+    <Compile Include="swig\SdpSession.cs" />
+    <Compile Include="swig\SendInstantMessageParam.cs" />
+    <Compile Include="swig\SendTypingIndicationParam.cs" />
+    <Compile Include="swig\SipEvent.cs" />
+    <Compile Include="swig\SipEventBody.cs" />
+    <Compile Include="swig\SipHeader.cs" />
+    <Compile Include="swig\SipHeaderVector.cs" />
+    <Compile Include="swig\SipMediaType.cs" />
+    <Compile Include="swig\SipMultipartPart.cs" />
+    <Compile Include="swig\SipMultipartPartVector.cs" />
+    <Compile Include="swig\SipRxData.cs" />
+    <Compile Include="swig\SipTransaction.cs" />
+    <Compile Include="swig\SipTxData.cs" />
+    <Compile Include="swig\SipTxOption.cs" />
+    <Compile Include="swig\SrtpCrypto.cs" />
+    <Compile Include="swig\SrtpCryptoVector.cs" />
+    <Compile Include="swig\SrtpOpt.cs" />
+    <Compile Include="swig\SslCertInfo.cs" />
+    <Compile Include="swig\SslCertName.cs" />
+    <Compile Include="swig\SslCertNameVector.cs" />
+    <Compile Include="swig\StreamInfo.cs" />
+    <Compile Include="swig\StreamStat.cs" />
+    <Compile Include="swig\StringVector.cs" />
+    <Compile Include="swig\SWIGTYPE_p_pjmedia_vid_dev_hwnd_type.cs" />
+    <Compile Include="swig\SWIGTYPE_p_p_void.cs" />
+    <Compile Include="swig\SWIGTYPE_p_unsigned_char.cs" />
+    <Compile Include="swig\SWIGTYPE_p_void.cs" />
+    <Compile Include="swig\TimerEvent.cs" />
+    <Compile Include="swig\TimeVal.cs" />
+    <Compile Include="swig\TlsConfig.cs" />
+    <Compile Include="swig\TlsInfo.cs" />
+    <Compile Include="swig\ToneDesc.cs" />
+    <Compile Include="swig\ToneDescVector.cs" />
+    <Compile Include="swig\ToneDigit.cs" />
+    <Compile Include="swig\ToneDigitMapDigit.cs" />
+    <Compile Include="swig\ToneDigitMapVector.cs" />
+    <Compile Include="swig\ToneDigitVector.cs" />
+    <Compile Include="swig\ToneGenerator.cs" />
+    <Compile Include="swig\TransportConfig.cs" />
+    <Compile Include="swig\TransportInfo.cs" />
+    <Compile Include="swig\TsxStateEvent.cs" />
+    <Compile Include="swig\TsxStateEventSrc.cs" />
+    <Compile Include="swig\TxErrorEvent.cs" />
+    <Compile Include="swig\TxMsgEvent.cs" />
+    <Compile Include="swig\UaConfig.cs" />
+    <Compile Include="swig\UserEvent.cs" />
+    <Compile Include="swig\Version.cs" />
+    <Compile Include="swig\VidCodecParam.cs" />
+    <Compile Include="swig\VidConfPortInfo.cs" />
+    <Compile Include="swig\VidDevManager.cs" />
+    <Compile Include="swig\VideoDevInfo.cs" />
+    <Compile Include="swig\VideoDevInfoVector.cs" />
+    <Compile Include="swig\VideoDevInfoVector2.cs" />
+    <Compile Include="swig\VideoMedia.cs" />
+    <Compile Include="swig\VideoMediaTransmitParam.cs" />
+    <Compile Include="swig\VideoMediaVector.cs" />
+    <Compile Include="swig\VideoPreview.cs" />
+    <Compile Include="swig\VideoPreviewOpParam.cs" />
+    <Compile Include="swig\VideoSwitchParam.cs" />
+    <Compile Include="swig\VideoWindow.cs" />
+    <Compile Include="swig\VideoWindowHandle.cs" />
+    <Compile Include="swig\VideoWindowInfo.cs" />
+    <Compile Include="swig\WindowHandle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pjsua2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
